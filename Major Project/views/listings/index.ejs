@@ -1,0 +1,18 @@
+<%layout("../layouts/bowilercode.ejs")-%>
+
+
+    <!-- <form action="/listings/new" method="get">
+        <button type="submit">Create new Listing</button>
+    </form> -->
+    <div class="card-container">
+        <%for(list of lists){%>
+        <div class="card">
+            <div class="card-img"><a href="/listings/<%=list._id%>"><img src="<%= list.image.url%>" alt="img"></a></div>
+            <div class="card-title"><%= list.title%></div>
+            <div class="card-description"><%=list.description%></div>
+            <div class="card-price"><b><i class="fa-solid fa-indian-rupee-sign"></i><%=list.price %></b>/night</div>
+        </div>
+            <%}%>
+    </div>
+
+</body>

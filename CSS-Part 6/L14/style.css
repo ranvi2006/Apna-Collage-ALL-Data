@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+h2{
+    color: rgb(174, 114, 2);
+}
+.main{
+width: 98vw;
+
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+/* border: rgba(0, 0, 0, 0.465) solid 1.5px; */
+}
+.card{
+    width: 35%;
+    height: 100%;
+    border: rgba(0, 0, 0, 0.465) solid 1.5px;
+    border-radius: 5%;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+img{
+    height: 45%;
+    width: 100%;
+    border-radius:10px;
+    overflow: hidden;
+    border: rgba(0, 0, 0, 0.465) solid 1.5px;
+    
+}
+
+@media(max-width:400px)
+{
+    .main{
+        flex-direction: column;
+        width: 98vw;
+    }
+    .card{
+        width: 90%;
+        
+    }
+}

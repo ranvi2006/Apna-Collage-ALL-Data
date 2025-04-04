@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    background: white;
+    display: inline-block;
+    box-shadow: 4px 4px 15px black;
+    /* border: 1px solid green; */
+    margin: 20px;
+    border-radius: 5px;
+    
+    
+}
+img{
+    height: 70%;
+    width: 100%;
+    background-color: aqua;
+    /* border: 1px solid rgb(255, 80, 6); */
+    border-radius: 5px 5px 0 0;
+    
+}
+h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.dis{
+    padding: 0 2px 0 2px;
+}
+.card:hover{
+    box-shadow: 8px 8px 30px black;
+}

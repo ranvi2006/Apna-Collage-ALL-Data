@@ -1,0 +1,59 @@
+<%layout("../layouts/bowilercode.ejs")-%>
+<body>
+
+    <div class="list-container">
+        <div class="list">
+            <h2><%=list.title %></h2>
+            <img  src="<%=list.image.url%>" alt="" >
+            
+            <p style="padding: 10px;"><%=list.description %></p>
+            <p><%= list.location%></p>
+            <div class="details">
+                <h4>&#x20B9;<%= list.price.toLocaleString("en-IN")%></h4>
+                <p>&nbsp;&nbsp;/<%=list.country%></p>
+            </div>
+           
+            <div class="details">
+                <a  href="/listings/<%=list._id%>/edit" type="button"> <button class="btn" style="background: green;">Edit your list</button></a>
+            <form action="/listings/<%=list._id%>?_method=Delete" method="POST">
+
+                <button class="btn" style="background-color: red;">Delete List</button>
+               </form>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="review-Container">
+        <h4>Leave a Review</h4>
+        <form method="post" action="/listings/<%=list._id%>/reviews" class=" form need-validation " >
+            <div>
+                <label for="rating" >Rating</label>
+                <input type="range" min="1" max="5" id="rating" name="Review[rating]" class="form-range" >
+            </div>
+            <div>
+                <label for="comment" class="form-label">Comment</label>
+                <textarea name="Review[comment]" id="comment" rows="5" class="form-control" required></textarea>
+            </div>
+            <button class="btn btn-outline-dark m-3">Submit</button>
+        </form>
+    </div>
+
+    <% for(review of reviews){%>
+
+        <div class="review">
+            <p class="review-comment"><strong>Comment:</strong> <%=review.comment%>!</p>
+            <p class="review-rating"><strong>Rating:</strong> <%=review.rating%>★</p>
+            <form method="post" action="/listings/<%=list._id%>/<%=review._id%>?_method=Delete" >
+                <button class="btn m-2 btn-danger">Delete Review</button>
+               </form>
+    
+            <% }%>
+          </div>
+           
+
+    
+       
+       
+
+</body>

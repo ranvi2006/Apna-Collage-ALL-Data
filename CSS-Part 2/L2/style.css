@@ -1,0 +1,11 @@
+*{
+    font-family: monospace;
+}
+/* universal selector^^^^^^ */
+h3{
+    color: purple;
+}
+h3,h1{
+    color: #b92b27;
+}
+/* element selector^^^^^^ */

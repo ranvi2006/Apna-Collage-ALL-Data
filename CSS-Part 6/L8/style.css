@@ -1,0 +1,21 @@
+.container{
+    height: 300px;
+    width: 600px;
+    border: black 2px solid;
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: 100px 100px;
+   align-items: center;
+   justify-items: center;
+
+    
+    
+}
+
+.boxs{
+   width: 50%;
+   height: 50%;
+    border: black 2px solid;
+    background-color: green;
+    text-align: center;
+}

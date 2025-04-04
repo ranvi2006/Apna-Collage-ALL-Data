@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>All Post </h1><a href="/posts/new">add new post</a>
+<hr>
+    <%for(let i=0;i<posts.length;i++){%>
+        <div class="postbox">
+            <h2>Username:<%=posts[i].username %></h2>
+            <h4>Content:<%=posts[i].post %></h4>
+            <a href="/posts/<%=posts[i].id%>">view in details</a>
+            <br>
+            <a href="/posts/<%=posts[i].id%>/edit">Edit</a>
+            <form method="POST" action="/posts/<%=posts[i].id%>?_method=DELETE">
+                <button>Delete Post</button>
+            </form>
+        </div>
+        <hr>
+    <%}%>
+    
+</body>
+</html>

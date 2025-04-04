@@ -1,0 +1,18 @@
+.container{
+    height: 300px;
+    width: 600px;
+    border: black 2px solid;
+   display: grid;
+   grid-template-columns: 200px 200px;
+  
+    
+    
+}
+
+.boxs{
+    height: 50px;
+    width: 100px;
+    border: black 2px solid;
+    background-color: green;
+    text-align: center;
+}

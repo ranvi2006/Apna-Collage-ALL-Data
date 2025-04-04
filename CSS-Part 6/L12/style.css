@@ -1,0 +1,36 @@
+.out {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in {
+    background-color: white;
+    height: 40%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+/* Between 501px and 900px */
+@media (min-width: 501px) and (max-width: 900px) {
+    .in {
+        background-color: red;
+    }
+}
+
+/* Between 301px and 500px */
+@media (min-width: 301px) and (max-width: 500px) {
+    .in {
+        background-color: green;
+    }
+}
+
+/* Less than or equal to 300px */
+@media (max-width: 300px) {
+    .in {
+        background-color: yellow;
+    }
+}

@@ -1,0 +1,8 @@
+ul {
+    display: flex;
+    gap: 10px; /* Optional: space between list items */
+    list-style: disc inside;
+}
+
+
+

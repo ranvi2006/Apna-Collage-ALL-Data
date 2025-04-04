@@ -1,0 +1,39 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+.pc-div{
+    display: flex;
+}
+
+select{
+    width: 50%;
+}
+#title,#des,#img,#loc {
+    width: 100%;
+}
+.p , .c{
+    width: 50%;
+}
+#price{
+    width: 100%;
+}
+h1{
+    font-weight: 700;
+    font-style: italic;
+    transform: scale(0.8);
+}
+button{
+    background-color:brown;
+    border-radius: 5px;
+}
+
+
+

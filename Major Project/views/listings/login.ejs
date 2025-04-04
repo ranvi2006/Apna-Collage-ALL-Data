@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page
+    </title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <div class="signup">
+       <h1>Login </h1>
+       <div>
+        <form action="/login/check" method="post">
+            <div>
+                <label for="data">Phone no or Email id :</label>
+                <input type="text" id="data" name="User[data]" placeholder="Enter Your phone no or email id" required>
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="User[password]" placeholder="Enter your password" required>
+
+            </div>
+            <div>
+                <button>Login</button>
+                <br>
+                <p><a href="/"> I Have  not an Accout</a></p>
+            </div>
+            
+        </form>
+       </div>
+    </div>
+    
+</body>
+</html>

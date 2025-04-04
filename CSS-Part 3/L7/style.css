@@ -1,0 +1,15 @@
+.div1{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+}
+.div2{
+    height: 100px;
+    width: 100px;
+    display: inline;
+    background-color: rgb(167, 55, 156);
+}
+img{
+    
+    width: 90vw;
+}

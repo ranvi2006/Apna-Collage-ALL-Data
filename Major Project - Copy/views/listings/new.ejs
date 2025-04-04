@@ -1,0 +1,68 @@
+
+
+        <%- layout("/layouts/bowilerCode")%>
+        <div class="form-container">
+            <h1>Add New Listing</h1>
+            <div>
+                
+                <form action="/listings" method="post" novalidate class="row g-3 needs-validation">
+                    <div class="col-md-12">
+                      <label for="title" class="form-label">Title*</label>
+                      <input type="text" id="title" name="title" class="form-control" placeholder="Write your title here" required>
+                      <div class="invalid-feedback">
+                        Please provide a title.
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-12">
+                      <label for="des" class="form-label">Description*</label>
+                      <input type="text" id="des" name="description" class="form-control" placeholder="Write your description here" required>
+                      <div class="invalid-feedback">
+                        Please provide a description.
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-12">
+                      <label for="img" class="form-label">Image</label>
+                      <input type="text" id="img" name="image" class="form-control" placeholder="Write your URL/link here">
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <small class="form-text text-muted">Please enter a valid image URL (e.g., https://example.com/image.jpg).</small>
+                    </div>
+                  
+                    <div class="col-md-12">
+                      <label for="loc" class="form-label">Location*</label>
+                      <textarea name="location" id="loc" class="form-control" rows="6" placeholder="Write your full location here" required></textarea>
+                      <div class="invalid-feedback">
+                        Please provide a location.
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-6">
+                      <label for="price" class="form-label">Price*</label>
+                      <input type="number" id="price" name="price" class="form-control" placeholder="Write your price here" required>
+                      <div class="invalid-feedback">
+                        Please provide a price.
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-6">
+                      <label for="country" class="form-label">Price*</label>
+                      <input type="text" id="country" name="country" class="form-control" placeholder="Write your country here" required>
+                      <div class="invalid-feedback">
+                        Please provide a Country.
+                      </div>
+                    </div>
+                  
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Add Listing</button>
+                    </div>
+                  </form>
+                  
+            </div>
+        </div>
+
+        <!-- <script src="/js/script.js"></script> -->
+
+ 

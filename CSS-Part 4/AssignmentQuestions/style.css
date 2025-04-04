@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin: auto;
+    margin-top: 10px;
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: 2s ease-in 0.5s;
+}
+#box1:hover{
+    width: 600px;
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color:yellow;
+    transform: translate(200px , 200px)
+
+}
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+    transform: skewX(20deg);
+}
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color:gray;
+    box-shadow: 2px 2px 5px green;
+}
+#myPic{
+    height: 100px;
+    width: 100px;
+    background-color:pink;
+    background-image: url("./men.jpg");
+    background-size: cover;
+    opacity: 50%;
+}

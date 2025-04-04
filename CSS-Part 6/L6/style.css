@@ -1,0 +1,20 @@
+.container{
+    height: 300px;
+    width: 600px;
+    border: black 2px solid;
+   display: grid;
+   
+    
+    
+}
+
+.boxs{
+   
+    border: black 2px solid;
+    background-color: green;
+    text-align: center;
+}
+.one{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

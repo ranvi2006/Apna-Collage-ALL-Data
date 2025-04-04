@@ -1,0 +1,215 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-container{
+    width: 100%;
+}
+.list img{
+    width: 60%;
+    height: 50vh;
+    border-radius: 1rem;
+}
+.list img:hover{
+    transform: scale(1.001);
+    box-shadow: 2px 2px 8px black;
+}
+ .list .details
+ {
+    display: flex;
+ }
+ button{
+    margin-left: 1rem;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 8px black;
+ }
+ .btn:hover{
+  opacity: 0.8;
+    transform: scale(1.01);
+ }
+
+ /* Container for all reviews */
+#reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual review block */
+  .review {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Add hover effect */
+  .review:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Comment text styling */
+  .review-comment {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  
+  /* Rating text styling */
+  .review-rating {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #666666;
+  }
+  
+  /* Strong tags within reviews */
+  .review strong {
+    color: #007bff; /* Accent color */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    #reviews-container {
+      padding: 10px;
+    }
+  
+    .review {
+      padding: 10px;
+    }
+  
+    .review-comment, .review-rating {
+      font-size: 0.9rem;
+    }
+}
+
+/* Container for the review form */
+.review-Container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  .review-Container h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  .review-Container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Label styling */
+  .review-Container label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 5px;
+  }
+  
+  /* Input range styling */
+  .review-Container input[type="range"] {
+    width: 100%;
+    appearance: none;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .review-Container input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .review-Container input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Textarea styling */
+  .review-Container textarea {
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-Container textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  /* Button styling */
+  .review-Container .btn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .review-Container .btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .review-Container {
+      padding: 15px;
+    }
+  
+    .review-Container h4 {
+      font-size: 1.3rem;
+    }
+  
+    .review-Container textarea {
+      font-size: 0.9rem;
+    }
+  
+    .review-Container .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  

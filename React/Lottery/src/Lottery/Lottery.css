@@ -1,0 +1,60 @@
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 5px #007bff;
+}
+
+button:active {
+    box-shadow: 0 0 15px #007bff, 0 0 30px #007bff;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🏆 Winner Style */
+h2:contains("Congratulation") {
+    color: #fff;
+    background: linear-gradient(45deg, #ffcc00, #ff5733);
+    box-shadow: 0 4px 10px rgba(255, 87, 51, 0.4);
+    animation: glow 1.5s infinite alternate;
+}
+
+/* 🔄 Losing Message Style */
+h2:contains("Better Luck next Time") {
+    color: #ff4b2b;
+    background: #fff5f5;
+    border: 2px solid #ff4b2b;
+    box-shadow: 0 2px 5px rgba(255, 75, 43, 0.3);
+}
+
+/* 🎟️ Lottery Ticket Styling */
+h5 {
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 🔥 Glow Animation */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #ffcc00;
+    }
+    to {
+        box-shadow: 0 0 20px #ff5733;
+    }
+}
+

@@ -1,0 +1,30 @@
+*
+{
+    text-align: center;
+}
+.out{
+    height: 0.5vh;
+    background-color: black;
+    width: 100%;
+    border-radius: 30%;
+    overflow: hidden;
+}
+.in{
+    height: 100%;
+    animation: a1 10s ease 1s infinite normal;
+    background-color: red;
+}
+
+@keyframes a1{
+    0%{}
+    5%{
+        background-color: aqua;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+
+

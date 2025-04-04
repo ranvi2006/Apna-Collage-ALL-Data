@@ -1,0 +1,44 @@
+img{
+    height: 50vh;
+    width: 50vw;
+}
+.flex{
+    display: flex;
+    background-color: aquamarine;
+    height: 50vh;
+    width: 80vw;
+    justify-content: space-around;
+}
+.flex-items{
+    background-color: rgb(217, 46, 94);
+    height: 20vh;
+    width: 20vw;
+}
+.flex1{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: aquamarine;
+    height: 50vh;
+    width: 80vw;
+    justify-content: space-around;
+}
+.flex3{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    
+    width: 80vw;
+    justify-content: space-around;
+}
+.flex4{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: aquamarine;
+    
+    width: 80vw;
+    justify-content: space-around;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

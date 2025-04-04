@@ -1,0 +1,22 @@
+<%- layout("/layouts/bowilerCode")%>
+
+
+<!-- Content for listings -->
+<div class="card-container">
+    <% for (let list of lists) { %>
+    <div class="card">
+        <div class="card-img">
+            <a href="/listings/<%= list._id %>">
+                <img src="<%= list.image.url %>" alt="img">
+            </a>
+        </div>
+        <div class="card-info">
+            <div class="card-title"><%= list.title %></div>
+            <div class="card-description"><%= list.description %></div>
+            <div class="card-price">
+                <b><i class="fa-solid fa-indian-rupee-sign"></i> <%= list.price %></b>/night
+            </div>
+        </div>
+    </div>
+    <% } %>
+</div>

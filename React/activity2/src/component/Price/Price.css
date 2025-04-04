@@ -1,0 +1,10 @@
+.price{
+    background-color: goldenrod;
+    border: 1px solid black;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1rem;
+}
+.price i{
+    text-decoration: line-through;
+}
+

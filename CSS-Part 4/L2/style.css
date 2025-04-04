@@ -1,0 +1,12 @@
+.divs{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 1s;
+}
+
+.divs:active{
+    margin-top: 90vh;
+}

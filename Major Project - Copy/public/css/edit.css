@@ -1,0 +1,63 @@
+<style>
+    /* Background Color */
+    body {
+        background: #f8f9fa;
+    }
+
+    /* Form Container */
+    .edit-container {
+        max-width: 650px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .edit-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ff385c; /* Airbnb Red */
+        margin-bottom: 20px;
+    }
+
+    .edit-form-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ff5a5f; /* Airbnb Border */
+    }
+
+    /* Labels */
+    .form-label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Input Fields */
+    .form-control {
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        transition: 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #ff385c; /* Airbnb Red */
+        box-shadow: 0px 0px 5px rgba(255, 56, 92, 0.5);
+    }
+
+    /* Submit Button */
+    .btn-airbnb {
+        background: linear-gradient(90deg, #ff385c, #fc7b63);
+        border: none;
+        padding: 14px 22px;
+        font-size: 16px;
+        color: white;
+        border-radius: 10px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    .btn-airbnb:hover {
+        background: linear-gradient(90deg, #fc7b63, #ff385c);
+    }

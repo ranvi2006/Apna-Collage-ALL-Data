@@ -1,0 +1,19 @@
+.flex{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    background-color: antiquewhite;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+.flex-item{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 4em;
+    
+}

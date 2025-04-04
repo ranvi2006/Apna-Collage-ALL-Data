@@ -1,0 +1,47 @@
+<%- layout("/layouts/bowilerCode.ejs")%>
+<div class="edit-container">
+  <h1 class="edit-title">Edit Your Listing</h1>
+  <div class="edit-form-container">
+      <form action="/listings/<%= list._id %>" method="post" class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <label for="title" class="form-label">🏡 Title:</label>
+            <input type="text" id="title" name="title" class="form-control" value="<%= list.title %>" required>
+            <div class="invalid-feedback">Please provide a valid title.</div>
+          </div>
+        
+          <div class="col-md-12">
+            <label for="des" class="form-label">📜 Description:</label>
+            <textarea id="des" name="description" class="form-control" rows="3" required><%= list.description %></textarea>
+            <div class="invalid-feedback">Please provide a valid description.</div>
+          </div>
+        
+          <div class="col-md-12">
+            <label for="img" class="form-label">🖼️ Image URL:</label>
+            <input type="text" id="img" name="image" class="form-control" value="<%= list.image.url %>">
+            <div class="invalid-feedback">Please provide a valid image URL.</div>
+          </div>
+        
+          <div class="col-md-6">
+            <label for="price" class="form-label">💰 Price (₹):</label>
+            <input type="number" id="price" name="price" class="form-control" value="<%= list.price %>" required>
+            <div class="invalid-feedback">Please provide a valid price.</div>
+          </div>
+        
+          <div class="col-md-6">
+            <label for="con" class="form-label">🌎 Country:</label>
+            <input type="text" id="con" name="country" class="form-control" value="<%= list.country %>" required>
+            <div class="invalid-feedback">Please provide a valid country.</div>
+          </div>
+        
+          <div class="col-md-12">
+            <label for="loc" class="form-label">📍 Location:</label>
+            <textarea id="loc" name="location" class="form-control" rows="3" required><%= list.location %></textarea>
+            <div class="invalid-feedback">Please provide a valid location.</div>
+          </div>
+        
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-airbnb">Update Listing</button>
+          </div>
+      </form>
+  </div>
+</div>

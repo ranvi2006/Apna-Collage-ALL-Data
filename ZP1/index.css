@@ -1,0 +1,40 @@
+.green{
+    height: 15vh;
+    width: 90vw;
+    
+    margin: 2vh 5vw 2vh 5vw;
+    background-color: rgb(214, 238, 179);
+}
+.text{
+    text-align: center;
+}
+.grade_div{
+    display: flex;
+    flex-direction: row;
+}
+.div1{
+    display: flex;
+    justify-content: space-between;
+  align-items: flex-end;
+    padding: 20px;
+    height: 10vh;
+}
+.button1
+{
+    height: 5vh;
+    width: 30vw;
+    background-color: green;
+}
+.div2{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+.green1{
+     background-color: rgb(221, 236, 198);
+   
+     height: 5vh;
+     width: 35vw;
+     border-color:white;
+     border-radius: 0%;
+}

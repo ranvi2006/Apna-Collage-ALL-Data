@@ -1,0 +1,20 @@
+.container{
+    height: 300px;
+    width: 600px;
+    border: black 2px solid;
+   display: grid;
+   grid-gap: 10px;
+    
+    
+}
+
+.boxs{
+   width: 50%;
+    border: black 2px solid;
+    background-color: green;
+    text-align: center;
+}
+.one{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}

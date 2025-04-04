@@ -1,0 +1,41 @@
+.lottery {
+    background-color: #181818; /* Dark background for modern look */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    width: fit-content;
+    margin: 30px auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .lottery h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00; /* Golden highlight */
+    margin-bottom: 10px;
+  }
+  
+  .lottery h2 {
+    font-size: 1.5rem;
+    color: #ff4444; /* Red for 'Better luck next time' */
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #ffcc00; /* Golden button */
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background-color: #ffaa00; /* Slightly darker gold */
+  }
+  

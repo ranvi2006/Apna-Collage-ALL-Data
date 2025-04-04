@@ -1,0 +1,66 @@
+
+
+<%layout("../layouts/bowilercode.ejs")-%>
+
+<body>
+<div class="edit-container">
+    <h1>edit your Listing</h1>
+    <div>
+        <form action="/listings/<%=list._id%>?_method=PUT" method="post" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-12">
+              <label for="title" class="form-label">Title:</label>
+              <input type="text" id="title" name="Listing[title]" class="form-control" value="<%= list.title %>" required>
+              <div class="invalid-feedback">
+                Please provide a valid title.
+              </div>
+            </div>
+          
+            <div class="col-md-12">
+              <label for="des" class="form-label">Description:</label>
+              <input type="text" id="des" name="Listing[description]" class="form-control" value="<%= list.description %>" required>
+              <div class="invalid-feedback">
+                Please provide a valid description.
+              </div>
+            </div>
+          
+            <div class="col-md-12">
+              <label for="img" class="form-label">Image URL:</label>
+              <input type="text" id="img" name="Listing[image]" class="form-control" value="<%= list.image.url %>">
+              <div class="invalid-feedback">
+                Please provide a valid image URL.
+              </div>
+            </div>
+          
+            <div class="col-md-6">
+              <label for="price" class="form-label">Price:</label>
+              <input type="number" id="price" name="Listing[price]" class="form-control" value="<%= list.price %>" required>
+              <div class="invalid-feedback">
+                Please provide a valid price.
+              </div>
+            </div>
+          
+            <div class="col-md-6">
+              <label for="con" class="form-label">Country:</label>
+              <input type="text" id="con" name="Listing[country]" class="form-control" value="<%= list.country %>" required>
+              <div class="invalid-feedback">
+                Please provide a valid country.
+              </div>
+            </div>
+          
+            <div class="col-md-12">
+              <label for="loc" class="form-label">Location:</label>
+              <textarea id="loc" name="Listing[location]" class="form-control" rows="6" required><%= list.location %></textarea>
+              <div class="invalid-feedback">
+                Please provide a valid location.
+              </div>
+            </div>
+          
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+          </form>
+          
+    </div>
+</div>
+   
+</body>

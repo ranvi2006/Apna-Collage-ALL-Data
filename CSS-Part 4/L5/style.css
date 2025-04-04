@@ -1,0 +1,15 @@
+div{
+    background-color: red;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.div1{
+    transform: translateX(50px);
+}
+.div2{
+    
+    transform: translateY(200px);
+    transform: translateX(-50px);
+}
